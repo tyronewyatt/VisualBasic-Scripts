@@ -1,5 +1,5 @@
 '    ************************************************************************************************************ 
-'    Purpose:    Get Windows 10 Version
+'    Purpose:    Get Windows 10 Version for GgInfo
 '    Pre-Reqs:   Windows 10
 '    Modified by Tyrone Wyatt
 '    Last Modified: 19/07/2021
