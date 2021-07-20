@@ -1,8 +1,8 @@
 '    ************************************************************************************************************ 
 '    Purpose:    Get Windows 10 Version
 '    Pre-Reqs:   Windows 10
-'	 Modified by Tyrone Wyatt
-'	 Last Modified: 19/07/2021
+'    Modified by Tyrone Wyatt
+'    Last Modified: 19/07/2021
 '    ************************************************************************************************************ 
 
 On Error Resume Next
