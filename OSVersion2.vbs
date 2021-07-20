@@ -15,7 +15,7 @@ ReleaseId = wshShell.RegRead("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\C
 ' Windows 10 version 20H2 or newer
 DisplayVersion = wshShell.RegRead("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DisplayVersion") 
 
-' If Error On RegRead Then Echo ReleaseId Else Echo DisplayVersion
+' If Exists Then Echo ReleaseId Else Echo DisplayVersion
 If (DisplayVersion) Then
     'WScript.Echo DisplayVersion
     Echo DisplayVersion
