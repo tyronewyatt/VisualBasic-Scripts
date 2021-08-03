@@ -8,9 +8,9 @@ On Error Resume Next
 
 Set objWMIService = GetObject("winmgmts:\root\cimv2")
 
-Set IPConfigSet = objWMIService.ExecQuery ("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled=TRUE")
+Set IPConfigs = objWMIService.ExecQuery ("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled=TRUE")
 
-For Each IPConfig in IPConfigSet
+For Each IPConfig in IPConfigs
     If Not IsNull(IPConfig.IPAddress) Then 
             If Not Instr(IPConfig.IPAddress(i), ":") > 0 Then
             'WScript.Echo IPConfig.IPAddress(i)
