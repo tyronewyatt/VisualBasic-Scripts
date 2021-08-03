@@ -12,7 +12,7 @@ Set CcmClients = objWMIService.ExecQuery ("Select ClientVersion from SMS_Client"
 
 For Each CcmClient in CcmClients
     If Not IsNull(CcmClient.ClientVersion) Then 
-        WScript.Echo CcmClient.ClientVersion
+        'WScript.Echo CcmClient.ClientVersion
         Echo CcmClient.ClientVersion
     End If
 Next
