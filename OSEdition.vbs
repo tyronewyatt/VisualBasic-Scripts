@@ -12,7 +12,10 @@ Set OperatingSystems = objWMIService.ExecQuery ("Select * from Win32_OperatingSy
 
 For Each OperatingSystem in OperatingSystems
     If Not IsNull(OperatingSystem.Caption) Then
-        WScript.Echo Replace(OperatingSystem.Caption,"Microsoft ","")
-        Echo Replace(OperatingSystem.Caption,"Microsoft ","")
+        If InStr(OperatingSystem.Caption,"Microsoft") = 1 Then
+            OperatingSystem.Caption = Trim(Replace(OperatingSystem.Caption,"Microsoft",""))
+        End If
+        WScript.Echo OperatingSystem.Caption
+        Echo OperatingSystem.Caption
     End If
 Next
