@@ -35,7 +35,7 @@ ElseIf (OperatingSystemEdition = "Microsoft Windows 10 Enterprise" And CurrentBu
 
 ' End Of Support Windows 10 version 21H2
 ElseIf (OperatingSystemEdition = "Microsoft Windows 10 Enterprise" And CurrentBuild = "19044") Then
-    EndOfSupport = "Your Windows version reaches end of service on 11/06/2024" + vbCrLf + "Go to Software Center to upgrade your Operating System"
+'    EndOfSupport = "Your Windows version reaches end of service on 11/06/2024" + vbCrLf + "Go to Software Center to upgrade your Operating System"
 
 End If
 
