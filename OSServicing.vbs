@@ -23,19 +23,19 @@ CurrentBuild = wshShell.RegRead("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows N
 
 ' End Of Support Windows 10 version 1709
 If (OperatingSystemEdition = "Microsoft Windows 10 Enterprise" And CurrentBuild = "16299") Then
-    EndOfSupport = "Windows reached the end of service on 13/10/2020" + vbCrLf + "Take your PC to IT Service Desk for help upgrading"
+    EndOfSupport = "Your Windows version reached end of service on 13/10/2020" + vbCrLf + "Take your PC to IT Service Desk for help upgrading"
 
 ' End Of Support Windows 10 version 1803
 ElseIf (OperatingSystemEdition = "Microsoft Windows 10 Enterprise" And CurrentBuild = "17134") Then
-    EndOfSupport = "Windows reached the end of service on 11/05/2021" + vbCrLf + "Take your PC to IT Service Desk for help upgrading"
+    EndOfSupport = "Your Windows version reached end of service on 11/05/2021" + vbCrLf + "Take your PC to IT Service Desk for help upgrading"
 
 ' End Of Support Windows 10 version 1909
 ElseIf (OperatingSystemEdition = "Microsoft Windows 10 Enterprise" And CurrentBuild = "18363") Then
-    EndOfSupport = "Windows is nearing end of service on 10/05/2022" + vbCrLf + "Go to Software Center to upgrade your Operating System"
+    EndOfSupport = "Your Windows version reaches end of service on 10/05/2022" + vbCrLf + "Go to Software Center to upgrade your Operating System"
 
 ' End Of Support Windows 10 version 21H2
 ElseIf (OperatingSystemEdition = "Microsoft Windows 10 Enterprise" And CurrentBuild = "19044") Then
-'    EndOfSupport = "Windows is nearing end of service on 11/06/2024" + vbCrLf + "Go to Software Center to upgrade your Operating System"
+    EndOfSupport = "Your Windows version reaches end of service on 11/06/2024" + vbCrLf + "Go to Software Center to upgrade your Operating System"
 
 End If
 
